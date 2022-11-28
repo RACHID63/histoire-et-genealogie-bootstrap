@@ -1,0 +1,167 @@
+body {
+  height: 100;
+  background-image: url(./images/compass-2946959_1920.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+/* .card-body {
+  position: absolute;
+left: 39%;
+top: 28%;
+width: 453px;
+height: 650px;
+background-image: url(./images/parchment-1527104_1920.jpg);
+background-repeat: no-repeat;
+background-image: cover;
+background-size: 450px;
+background-position: 50% 50%;
+box-shadow: -40px 100px 40px rgb(67 63 63 / 75%);
+box-shadow: -47px 95px 40px rgba(67, 40, 40, 0.8);
+margin-top: -93px;
+} */
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.row,
+.form-outline,
+.form-check {
+  text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header {
+  background-color: #fff;
+  height: 45px;
+}
+header a img {
+  width: 133px;
+  margin-top: 4px;
+}
+
+span,
+.form .sign {
+  width: 300px;
+  top: 300px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: red;
+}
+
+.containerlogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+div > .form {
+  width: 203px;
+  margin-left: 0;
+  height: 203px;
+}
+
+.login-page {
+  width: 413px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login {
+  margin-top: -31px;
+  margin-bottom: 26px;
+}
+.form {
+  height: 200px;
+  padding: 100px;
+  border-radius: 20px;
+  background-color: #dbc098;
+  background-image: url(./images/payrus-02.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  position: relative;
+  margin: 0 auto 100px;
+  text-align: center;
+  box-shadow: -40px 90px 40px rgb(67, 63, 63, 0.8);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-size: 20px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg, #328f8a, #08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.centered-form {
+  margin-top: 60px;
+}
+
+.centered-form .panel {
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.5) -35px 60px 20px;
+}
+
+.row,
+.form-group {
+  margin-top: 8px;
+}
+
+input.btn {
+  margin-top: 6px;
+  padding: 10px;
+  background-color: aqua;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: none;
+    background-color: brown;
+  }
+}

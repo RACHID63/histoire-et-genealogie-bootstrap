@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/papyrus.png">
+  <link rel="stylesheet" href="./stylesindex.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>GENEALOGIE</title>
+</head>
+
+<body class="bg-danger float-none">
+  
+  <header class="container heider  d-flex flex-column flex-wrap-nowrap align-items-center align-content-center">
+    <div class="container  boxheider ">
+      <!-- navbar -->
+      <nav class="container navbar  navbar-expand-lg navbar-light   navbar-warning bg-warning fixed-tom position-absolute 
+         ">
+        <div class=" container integrationmenu">
+          <div class="navbaraccueil ">
+            <a class="navbar-brand ms-5" href="#">ACCUEIL</a>
+          </div>
+          <button class="container   navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-toggleMobileMenu text-center"
+              style="--bs-toggleMobileMenu-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> Histoire LAIEB</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./geneLaiebbouchareb.html">généalogie LAIEB</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn-lg  btn-primary text-decoration-none " data-bs-toggle="modal"
+                  data-bs-target="#contacModal">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="./login.html" class="btn-lg btn-danger text-decoration-none ">login</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="./sign.html" class="btn-lg btn-success text-decoration-none " target="_blank"><span>sign</span>
+                </a>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control  " type="search" placeholder="ton Nom cherch" aria-label="Search">
+              <button class="btnsearch btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--/ navbar -->
+      <!-- ------caroussel------- -->
+      <div class="container img-fluid boxcaroussel ">
+        <div class=" boxtitre ">
+          <div >
+
+            <img class="img-fluid tampon" src="./images/certified3.png" alt="tampon-vérifié">
+          </div>
+          <div>
+            <H2 class="titre"> ASSOCIATION <br> HISTOIRE <br> GENEALOGIE </H2>
+          </div>
+        </div>
+        <div id="carouselSlidesOnly" class="container carousel slide  " data-bs-ride="carousel">
+          <div class=" container-fluid carousel-inner ">
+            <div class=" 
+          carousel-item active">
+              <img id="carte" src="./images/carte.jpg" class="  d-block w-75 ms-5 rounded-5 d-flex " alt="carte">
+            </div>
+            <div class="  carousel-item">
+              <img src="./images/align-fingers-71282.jpg" class="img-fluid d-block w-100 rounded-5" alt="mains">
+            </div>
+            <div class="  carousel-item">
+              <img src="./images/hands.jpg" class="img-fluid d-block w-100 rounded-5" alt="mains unis">
+            </div>
+            <div class=" carousel-item">
+              <img src="./images/dna-3d.jpg" class=" img-fluid  d-block w-100 rounded-5" alt="adn">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------caroussel------- -->
+    </div>
+  </header>
+  <!-- Modal contact -->
+  <div class="modal fade" id="contacModal" tabindex="-1" aria-labelledby="contacModalLabel"
+    aria-hidden="true border-0 rounded-5">
+    <div class="modal-dialog   ">
+      <div class="modal-content border rounded-5 ">
+        <div class="modal-header bg-info border rounded-5">
+          <h1 class="modal-title fs-1" id="contacModalLabel">Contact</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4 ">
+          <p><span class="colortex"> <strong></strong> </span><strong>LAIEB Rachid</strong><br></p>
+          <p><span class="colortex"> <strong>Adresse :</strong> </span> 12 rue de la page <br>75000 paris</p>
+          <p><span class="colortex"> <strong>Email:</strong> </span>laieb@soldeal.fr</p>
+        </div>
+        <div class="modal-footer d-flex justify-content-center flex-wrap-center ">
+          <button id="btnContact" type="button" class="btn btn-success  align-items-center "
+            data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----modal login------- -->
+  <div class="container-fluid  modal fade w-500 " id="contacModal1" tabindex="-1" aria-labelledby="contacModalLabel"
+    aria-hidden="true border-0 rounded-5">
+  </div>
+  <!-- ---Homme---- -->
+  <!-- --------footer----------- -->
+  <footer class=" container footercontainer fixed-bottom px-0  ">
+
+    <div class=" footer">
+      <div class="wrapper">
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <span>Facebook</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <a href="https://twitter.com/?lang=fr" target="_blank">
+
+            <span>Twitter</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <a href="https://www.instagram.com/" target="_blank"></a>
+          <span>Instagram</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-codepen"></i>
+          </div>
+          <a href="https://codepen.io/your-work" target="_blank">
+            <span>Codepen</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <span>YouTube</span>
+          <a href="https://www.youtube.com/channel/UCE6Px8oF9-i3-udNVcMV6Ag" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+
+</html>

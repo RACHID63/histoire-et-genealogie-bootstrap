@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  margin: 0;
+}
+
+body,
+.image-fluid {
+  max-width: 100vmax;
+  height: 100vh;
+  background-image: url(./images/870x489_30_05_22_adn_kateryna_kon_science_photo_library_gettyimages-1339204507.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+  display:flex;
+  align-items: center;
+  align-content: center;
+  place-items: center;
+
+}
+
+nav {
+  width: auto;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  margin-left: 0px;
+  border-bottom-right-radius: 20px;
+  background: #504702c8;
+  opacity: 2;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.containerpersonne1 {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.containerpersonne2 {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.containerpersonne3 {
+  background: transparent;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.prénom,
+.sitegénéalogie {
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 35px;
+  padding-bottom: 2px;
+  color: #fff;
+}
+
+.titre.site {
+  font-size: 35px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.sitegénéalogie {
+  font-size: 35px;
+  padding-bottom: 26px;
+  color: #ffff;
+}
+
+.btn1 {
+  margin: 16px;
+  width: fit-content;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  border-radius: 8rem;
+}
+
+button {
+  width: 80%;
+  height: 100px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.btn-light:hover {
+  color: black;
+  background-color: yellow;
+  border-color: red;
+  -webkit-box-shadow: 0px 1px 28px 15px rgba(243, 235, 235, 0.963);
+  box-shadow: 0px 1px 28px 15px rgba(243, 235, 235, 0.963);
+}
+
+.sidebar {
+  padding: 30px;
+  position: absolute;
+  /* top: 100; */
+  left: 0;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: #504702c8; */
+  opacity: 2;
+  width: 340px;
+  height: 500px;
+}
+
+.img,
+.père.mère.fils {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: solid 5px chocolate;
+  object-fit: fill;
+}
+
+.mère {
+  object-position:1px 3px ;
+  
+}
+
+.père {
+  object-position: 50% 50%x;
+  
+}
+
+.fils {
+  object-position: 4px 10px;
+  background-color: white;
+  object-fit: contain;
+  width: 50px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.footercontainer {
+  position: fixed;
+  bottom: 0;
+  margin-left: 0px;
+  height: 150px;
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+  background: #504702c8;
+  opacity: 2;
+  width: 100%;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+  background: #1da1f2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+  background: #333;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+  background: #ff0000;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #4267b2;
+}
+
+.wrapper .button:nth-child(2) span {
+  color: #1da1f2;
+}
+
+.wrapper .button:nth-child(3) span {
+  color: #e1306c;
+}
+
+.wrapper .button:nth-child(4) span {
+  color: #333;
+}
+
+.wrapper .button:nth-child(5) span {
+  color: #ff0000;
+}
+
