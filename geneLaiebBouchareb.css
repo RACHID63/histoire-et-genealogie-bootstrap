@@ -18,7 +18,6 @@ body,
   align-items: center;
   align-content: center;
   place-items: center;
-
 }
 
 nav {
@@ -93,13 +92,18 @@ nav {
   color: #ffff;
 }
 
-.btn1 {
-  margin: 16px;
+a {
+  text-decoration: none;
+}
+
+a.btn1 {
+  margin: 15px;
   width: fit-content;
 }
 
 .btn-group-lg>.btn,
 .btn-lg {
+  margin-bottom: 20px;
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
@@ -129,17 +133,16 @@ button {
 }
 
 .sidebar {
-  padding: 30px;
+  
   position: absolute;
-  /* top: 100; */
   left: 0;
   margin-top: 100px;
+  margin-bottom: 2px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background: #504702c8; */
   opacity: 2;
   width: 340px;
   height: 500px;
@@ -177,9 +180,33 @@ h2 {
   font-size: 2.5rem;
 }
 
+#boxtext {
+  font-family: 'Dancing Script', cursive;
+  padding: 55px;
+  position: absolute;
+  top: 3%;
+  left:160%;
+  background: url(./images/parchment-1527104_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position: 5%;
+  background-color:rgb(101, 83, 21);
+  opacity: 0.80;
+  border: solid whitesmoke;
+  width: 1301px;
+  height: 483px;
+  border-radius: 15px;
+  overflow: hidden;
+  overflow: scroll;
+  font-weight: 700;
+  font-size: 35px;
+  box-shadow: 0px 1px 38px 25px #f3edf8;
+}
+
 .footercontainer {
   position: fixed;
   bottom: 0;
+ left: 0;
   margin-left: 0px;
   height: 150px;
   display: flex;
