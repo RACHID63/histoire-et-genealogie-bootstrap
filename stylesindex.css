@@ -336,20 +336,18 @@ top: 207px;
     text-align: center;
   }
 
-  .p {
+  #histoirelaieb1 {
     margin-top: 0;
     margin-bottom: -3px;
     padding: -24px;
-    width: 330px;
-    left: -2px;
+    width: 446px;
+    left: -43px;
     position: absolute;
-    font-size: 1px;
-    padding: 32px;
+    font-size: 19px;
     color: black;
     background-size: 210%;
     background-position-y: 0px;
     background-position-x: -102px;
     background-image: none;
-  } 
-  
+  }
 }
