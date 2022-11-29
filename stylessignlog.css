@@ -6,22 +6,6 @@ body {
   background-size: 100%;
 }
 
-/* .card-body {
-  position: absolute;
-left: 39%;
-top: 28%;
-width: 453px;
-height: 650px;
-background-image: url(./images/parchment-1527104_1920.jpg);
-background-repeat: no-repeat;
-background-image: cover;
-background-size: 450px;
-background-position: 50% 50%;
-box-shadow: -40px 100px 40px rgb(67 63 63 / 75%);
-box-shadow: -47px 95px 40px rgba(67, 40, 40, 0.8);
-margin-top: -93px;
-} */
-
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
   font-size: 1rem;
   line-height: 2.15;
