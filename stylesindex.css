@@ -94,21 +94,21 @@ active {
   justify-content: center;
 }
 
-.boxtitre {
-  /* position: absolute;
-  top: 200px; */
+#paragraphHistoire ,.boxtitre {
+   position: absolute;
+  top: 240px; 
+  /* left: 20.31%; */
   width: 1301px;
-  height: 670px;
+  height:570px;
   padding: 55px;
   border-radius: 15px;
   font-family: "Dancing Script", cursive;
-  left: 20.31%;
   background-color: antiquewhite;
   background-repeat: no-repeat;
   background-size: 300%;
   background-position: 5%;
   background-color: rgb(101, 83, 21);
-  opacity: 0.5;
+  opacity: 0.75;
   border: solid whitesmoke;
   overflow: hidden;
   overflow: scroll;
@@ -126,6 +126,8 @@ active {
 
 #titrehistoire {
   text-align: center;
+  font-size: larger;
+  text-decoration-line: underline;
 }
 
 .footercontainer {
@@ -328,6 +330,7 @@ top: 207px;
   }
 
   .boxtitre {
+    font-family: 'Dancing Script', cursive;
     position: absolute;
     top: 350px;
     width: 463px;
