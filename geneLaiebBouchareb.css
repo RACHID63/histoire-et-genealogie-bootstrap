@@ -33,13 +33,14 @@ nav {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .containerpersonne1 {
-  margin-right: 20px;
+  margin-left: 114px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -58,7 +59,7 @@ nav {
 
 .containerpersonne3 {
   background: transparent;
-  margin-left: 20px;
+  margin-right: 114px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -132,7 +133,6 @@ button {
 }
 
 .sidebar {
-  
   position: absolute;
   left: 0;
   margin-top: 100px;
@@ -145,6 +145,16 @@ button {
   opacity: 2;
   width: 340px;
   height: 500px;
+}
+
+#imghome {
+  margin-bottom: 15px;
+ width: 80px;
+ cursor: pointer;
+}
+
+#imghome, .logohome :hover {
+  width: 100px;
 }
 
 .img,
@@ -200,6 +210,11 @@ h2 {
   font-weight: 700;
   font-size: 35px;
   box-shadow: 0px 1px 38px 25px #f3edf8;
+}
+
+.boxtext :hover {
+  border: solid black;
+
 }
 
 .footercontainer {
@@ -303,3 +318,14 @@ h2 {
   color: #ff0000;
 }
 
+@media screen and (max-width: 950px) {
+
+  .navbar {
+    width: 100vw;
+
+  }
+  .titre.site {
+    display: none;
+  }
+  
+}

@@ -32,6 +32,7 @@ body {
 }
 
 p {
+  font-family: "Dancing Script";
   padding: 55px;
   color: black;
   background-size: 210%;
@@ -72,13 +73,15 @@ active {
 .navbar {
   position: absolute;
   top: 10px;
+  padding: 19px;
   background-color: rgb(238, 239, 220);
   border-radius: 120px;
   opacity: 0.8;
-  width: 1346px;
+  width: 1322px;
 }
 
 .search {
+  font-family: "Dancing Script";
   padding-left: -2px;
   margin-left: 0px;
   width: 221px;
@@ -94,15 +97,15 @@ active {
   justify-content: center;
 }
 
-#paragraphHistoire ,.boxtitre {
-   position: absolute;
-  top: 240px; 
+.boxtitre {
+  font-family: "Dancing Script";
+  position: absolute;
+  top: 240px;
   /* left: 20.31%; */
   width: 1301px;
-  height:570px;
+  height: 570px;
   padding: 55px;
   border-radius: 15px;
-  font-family: "Dancing Script", cursive;
   background-color: antiquewhite;
   background-repeat: no-repeat;
   background-size: 300%;
@@ -128,6 +131,10 @@ active {
   text-align: center;
   font-size: larger;
   text-decoration-line: underline;
+}
+
+#famillefrères {
+  cursor: pointer;
 }
 
 .footercontainer {
@@ -255,11 +262,11 @@ active {
   }
 
   .header {
+    
     top: -47px;
   }
 
   .search {
-    position: absolute;
     position: absolute;
     top: 333px;
     left: 96px;
@@ -330,7 +337,7 @@ top: 207px;
   }
 
   .boxtitre {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     position: absolute;
     top: 350px;
     width: 463px;
