@@ -100,7 +100,7 @@ active {
 .boxtitre {
   font-family: "Dancing Script";
   position: absolute;
-  top: 240px;
+  top: 218px;
   /* left: 20.31%; */
   width: 1301px;
   height: 570px;
@@ -138,11 +138,11 @@ active {
 }
 
 .footercontainer {
+  height: 100px;
+  width: 360px ;
   border: solid 2px white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 100px;
-  width: 100%;
   background: #002334;
   width: 100vw;
   display: flex;
@@ -340,9 +340,9 @@ top: 207px;
     font-family: "Dancing Script", cursive;
     position: absolute;
     top: 350px;
-    width: 463px;
+    width: 400px;
     height: 308px;
-    left: -31px;
+    left:6px;
     padding: 18px;
     font-size: 18px;
   }

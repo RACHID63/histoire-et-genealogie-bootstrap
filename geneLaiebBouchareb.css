@@ -41,6 +41,7 @@ nav {
 
 .containerpersonne1 {
   margin-left: 114px;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -50,6 +51,7 @@ nav {
 
 .containerpersonne2 {
   margin-left: 20px;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -60,6 +62,7 @@ nav {
 .containerpersonne3 {
   background: transparent;
   margin-right: 114px;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -67,7 +70,7 @@ nav {
   align-items: center;
 }
 
-.prénom,
+
 .sitegénéalogie {
   text-decoration: none;
   margin-bottom: 5px;
@@ -91,6 +94,52 @@ nav {
   padding-bottom: 26px;
   color: #ffff;
 }
+
+span,
+.prénom {
+  background: black;
+  border: solid rgb(210, 105, 30);
+  font-size: 24px;
+  color: whitesmoke;
+  padding: 4px;
+  border-radius: 16px;
+  position: absolute;
+  top: 112px;
+  left: 53px;
+  text-align: center;
+}
+
+.prénom-fatma {
+  position: absolute;
+  top: 112px;
+  left: 53px;
+
+}
+
+.prénom-mostefa {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  top: 108px;
+  left: 43px;
+}
+
+
+/* 
+.prénom-fatma {
+  background: black;
+  border: solid rgb(210, 105, 30);
+  font-size: 24px;
+  color: whitesmoke;
+  padding: 4px;
+  border-radius: 16px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+} */
+
+
 
 a {
   text-decoration: none;
@@ -173,7 +222,7 @@ button {
 }
 
 .père {
-  object-position: 50% 50%x;
+  object-position: 50% 50%;
 
 }
 
@@ -182,6 +231,7 @@ button {
   background-color: white;
   object-fit: contain;
   width: 50px;
+
 }
 
 h2 {
@@ -203,8 +253,8 @@ h2 {
   background-color: rgb(101, 83, 21);
   opacity: 0.80;
   border: solid whitesmoke;
-  width: 1301px;
-  height: 483px;
+  width: 1000px;
+  height: 362px;
   border-radius: 15px;
   overflow: hidden;
   overflow: scroll;
@@ -220,17 +270,17 @@ h2 {
 
 .footercontainer {
   position: fixed;
+  width: 100vw;
   bottom: 0;
+  height: 150px;
   left: 0;
   margin-left: 0px;
-  height: 150px;
   display: flex;
   flex: row;
   justify-content: center;
   align-items: center;
   background: #504702c8;
   opacity: 2;
-  width: 100%;
 }
 
 .wrapper .button {
@@ -291,7 +341,7 @@ h2 {
   color: #fff;
 }
 
-.wrapper .button span {
+.wrapper .button {
   font-size: 20px;
   font-weight: 500;
   line-height: 60px;
@@ -322,10 +372,18 @@ h2 {
 
 
 @media screen and (max-width: 950px) {
-  body {
 
+  .header {
     width: 100vw;
+    left: 0;
+  }
+
+
+  body {
+    width: auto;
     height: 100vh;
+    background: none;
+    background-color: rgb(210, 105, 30);
   }
 
   .navbar {
@@ -336,24 +394,45 @@ h2 {
   .containerpersonne1 {
     margin-left: 0px;
     width: 119px;
+    left: 8px;
   }
 
-  .prénom {
+  .containerpersonne2 {
+    left: 25px;
+  }
 
-    font-size: 23px;
+  .containerpersonne3 {
+    margin-left: 10px;
+    left: 45px;
+    top: -0px;
   }
 
   .img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+  }
+
+  span,
+  .prénom {
+    font-size: 15px;
+    top: 68px;
+    left: 30px;
+  }
+
+  .prénom-mostefa {
+    top: 68px;
+    left: 8px;
+  }
+
+  .prénom-fatma {
+    top: 68px;
+    left: 18px;
   }
 
   .père {
     margin-right: 12px;
     margin-left: -13px;
   }
-
-
 
   #btnAcceuil {
     width: 87px;
@@ -385,7 +464,7 @@ h2 {
     object-fit: fill;
   }
 
-  .prénom,
+
   .sitegénéalogie {
     text-decoration: none;
     margin-bottom: 5px;
@@ -456,13 +535,19 @@ h2 {
     background-color: rgb(101, 83, 21);
     opacity: 0.80;
     border: solid whitesmoke;
+    font-weight: 700;
+    font-size: 19px;
     width: 266px;
     height: 400px;
     border-radius: 15px;
     overflow: hidden;
     overflow: scroll;
-    font-weight: 700;
-    font-size: 19px;
 
 
   }
+
+  .footercontainer {
+    width: 100vw;
+  }
+
+}
