@@ -121,6 +121,7 @@ active {
 }
 
 .titre {
+  margin-top: -154px;
   color: rgb(52, 40, 28);
   font-family: "Dancing Script", cursive;
   font-size: 155px;
