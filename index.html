@@ -19,9 +19,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f6a18e5345.js" crossorigin="anonymous"></script>
-
 </head>
-
 <body>
   <div class="container header ">
     <nav class="container navbar  navbar-expand-xxl navbar-light navbar-fixed-top   
@@ -67,6 +65,29 @@
     </nav>
     <!--/ navbar -->
   </div>
+   <!-- Modal contact -->
+   <div class="modal fade" id="contacModal" tabindex="-1" aria-labelledby="contacModalLabel"
+   aria-hidden="true border-0 rounded-5">
+   <div class="modal-dialog   ">
+     <div class="modal-content border rounded-5 ">
+       <div class="modal-header bg-info border rounded-5">
+         <h1 class="modal-title fs-1" id="contacModalLabel">Contact</h1>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body fs-4 ">
+         <p><span class="colortex"> <strong></strong> </span><strong>LAIEB Rachid</strong><br></p>
+         <p><span class="colortex"> <strong>Adresse :</strong> </span> 12 rue de la page <br>75000 paris</p>
+         <p><span class="colortex"> <strong>Email:</strong> </span>laieb@soldeal.fr</p>
+       </div>
+       <div class="modal-footer d-flex justify-content-center flex-wrap-center ">
+         <button id="btnContact" type="button" class="btn btn-success  align-items-center "
+           data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Modal contact -->
+ <!-- ----boxtext---------- -->
   <div class=" boxtitre bg-light bg-light   ">
     <H1 class=" titre"><a name="accueil"></a> <strong></strong> 
        <br> Histoire <br> et Généalogie </H1>
@@ -78,10 +99,10 @@
     <br>
     <br>
     <HR NOSHADE>
-    <div class="histoirelaieb1">
+    <article class="histoirelaieb1">
       <a name="histoirelaieb"></a>
       <h2 id="titrehistoire"> <strong>Histoire Famille Laieb</strong> </h2>
-      <p id="#paragraphHistoire"> <strong> c'était le 5 janvier 1961 à Ouled-Ali-Oubraham juste ,à coté de l'Ajankia (Ouled-Kacem), commune mixte d'EL
+      <p class="article" id="#paragraphHistoire"> <strong> c'était le 5 janvier 1961 à Ouled-Ali-Oubraham juste ,à coté de l'Ajankia (Ouled-Kacem), commune mixte d'EL
         MILIA ,ex département de constantine ,pendant la guerre de libération de l'Algérie. <br>
 
         Ouled-Ali-Oubraham est partagée entre plusieurs grandes familles ;
@@ -117,8 +138,9 @@
         du village d'EL MILIA. </strong></p>
       <a href="http://elmiliastory.centerblog.net/1217-la-cinquantaine-deja" target="_blank">extrait du blog
         http://elmiliastory.centerblog.net</a>
-    </div>
+    </article>
   </div>
+  <!-- ----boxtext---------- -->
   </div>
   <img class="img-fluid" id="tamponcertified" src="./images/certified_after (1).jpg" alt=" tampon certified">
 
@@ -166,7 +188,6 @@
       </div>
     </div>
   </footer>
-  
 </body>
 
 </html>

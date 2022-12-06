@@ -6,6 +6,10 @@ import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&fam
   margin: 0;
 }
 
+body {
+  margin: 0;
+}
+
 body,
 .image-fluid {
   max-width: 100vmax;
@@ -25,13 +29,14 @@ nav {
 }
 
 .header {
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
+  left: 0;
   margin-left: 0px;
   background: #504702c8;
   opacity: 2;
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,29 +75,40 @@ nav {
   align-items: center;
 }
 
-
-.sitegénéalogie {
-  text-decoration: none;
-  margin-bottom: 5px;
-  font-size: 35px;
-  padding-bottom: 2px;
-  color: #fff;
-}
-
 .titre.site {
-  font-size: 35px;
+  font-size: 25px;
   background: transparent;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  border: solid 2px;
+  border-radius: 27px;
+  padding: 8px;
+  background: rgb(191, 141, 112);
+  padding: 9px;
+  border: solid 1px wheat;
+  background: brown;
+  border-radius: 17px;
+
+
 }
 
 .sitegénéalogie {
-  font-size: 35px;
-  padding-bottom: 26px;
+  font-size: 22px;
+  padding-bottom: 20px;
   color: #ffff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 span,
@@ -123,23 +139,6 @@ span,
   top: 108px;
   left: 43px;
 }
-
-
-/* 
-.prénom-fatma {
-  background: black;
-  border: solid rgb(210, 105, 30);
-  font-size: 24px;
-  color: whitesmoke;
-  padding: 4px;
-  border-radius: 16px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-
-} */
-
-
 
 a {
   text-decoration: none;
@@ -200,6 +199,9 @@ button {
   margin-bottom: 15px;
   width: 80px;
   cursor: pointer;
+  position: absolute;
+  top: -54px;;
+  left: 120px;
 }
 
 #imghome,
@@ -380,8 +382,9 @@ h2 {
 
 
   body {
+    margin: 0px;
     width: auto;
-    height: 100vh;
+    height: 100%;
     background: none;
     background-color: rgb(210, 105, 30);
   }
@@ -437,24 +440,22 @@ h2 {
   #btnAcceuil {
     width: 87px;
     position: absolute;
-    left: -142px;
+    left: -37px;
   }
 
   #btnPaternel {
     position: absolute;
-    left: -6px;
+    left: 128px;
     margin-left: -15px;
   }
 
   #btnMaternel {
     position: absolute;
-    left: 145px;
+    left: 329px;
     margin-left: -46px;
   }
 
-  .titre.site {
-    display: none;
-  }
+  .titre.site {}
 
   img {
     width: 25px;
@@ -462,15 +463,6 @@ h2 {
     border-radius: 50%;
     border: solid 5px chocolate;
     object-fit: fill;
-  }
-
-
-  .sitegénéalogie {
-    text-decoration: none;
-    margin-bottom: 5px;
-    font-size: 14px;
-    padding-bottom: -17px;
-    color: #fff;
   }
 
   body {
@@ -481,8 +473,8 @@ h2 {
 
   .logohome {
     position: absolute;
-    left: 123px;
-    top: -55px;
+    top: 8px;
+    left: 139px;
   }
 
   .sidebar {
@@ -526,8 +518,8 @@ h2 {
     font-family: 'Dancing Script', cursive;
     padding: 27px;
     position: absolute;
-    top: 94%;
-    left: -110%;
+    top: 199px;
+    left: 0%;
     background: url(./images/parchment-1527104_1920.jpg);
     background-repeat: no-repeat;
     background-size: 300%;
@@ -547,7 +539,7 @@ h2 {
   }
 
   .footercontainer {
-    width: 100vw;
+    width: 100%;
   }
 
 }
