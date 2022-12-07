@@ -200,7 +200,8 @@ button {
   width: 80px;
   cursor: pointer;
   position: absolute;
-  top: -54px;;
+  top: -54px;
+  ;
   left: 120px;
 }
 
@@ -376,23 +377,36 @@ h2 {
 @media screen and (max-width: 950px) {
 
   .header {
-    width: 100vw;
+    width: 100%;
     left: 0;
   }
 
-
   body {
     margin: 0px;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background: none;
     background-color: rgb(210, 105, 30);
   }
 
-  .navbar {
-    width: 20px;
+  .navbar-brand {
+
+    background-color: orangered;
+    width: 85px;
+    padding: 15px;
+    border-radius: 21px;
+  }
+
+  .sitegénéalogie {
+    width: 62px;
+    height: 62px;
+    font-size: 0px;
+    color: #ffff;
+    text-decoration: none;
+    color: #fff;
 
   }
+
 
   .containerpersonne1 {
     margin-left: 0px;
@@ -455,7 +469,9 @@ h2 {
     margin-left: -46px;
   }
 
-  .titre.site {}
+  .titre {
+    margin-top: 1px;
+  }
 
   img {
     width: 25px;
