@@ -75,6 +75,24 @@ nav {
   align-items: center;
 }
 
+#popuprachid {
+  margin: 6rem auto;
+  padding: 2rem ;
+  background: #fff;
+  border-radius: 10px;
+  width: 48%;
+  position: relative;
+  left: 0;
+  transition:all 0.4s ease-in-out;
+}
+
+#popuprachid .cross{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+
 .titre.site {
   font-size: 25px;
   background: transparent;
@@ -111,8 +129,8 @@ nav {
   align-items: center;
 }
 
-span,
-.prénom {
+
+.prénom-rachid, .prénom-mostefa, .prénom-fatma {
   background: black;
   border: solid rgb(210, 105, 30);
   font-size: 24px;
@@ -121,8 +139,14 @@ span,
   border-radius: 16px;
   position: absolute;
   top: 112px;
-  left: 53px;
+  left: auto;
   text-align: center;
+}
+
+.rachid,.mostefa {
+  display: flex;
+    justify-content: center;
+
 }
 
 .prénom-fatma {

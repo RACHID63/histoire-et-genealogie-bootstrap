@@ -87,6 +87,7 @@ active {
   padding-left: -2px;
   margin-left: 0px;
   width: 221px;
+  border-radius: 10px;
   border: solid green;
   font-weight: 700;
 }
@@ -123,6 +124,8 @@ active {
 }
 
 .titre {
+  width: 104px;
+    height: 104px;
   margin-top: -154px;
   color: rgb(52, 40, 28);
   font-family: "Dancing Script", cursive;
@@ -252,7 +255,7 @@ active {
   color: #fff;
 }
 
-.wrapper .button span {
+.wrapper .button  {
   font-size: 20px;
   font-weight: 500;
   line-height: 60px;
