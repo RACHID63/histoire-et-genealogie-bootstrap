@@ -257,7 +257,7 @@ h2 {
   opacity: 0.80;
   border: solid whitesmoke;
   width: 1000px;
-  height: 362px;
+  height: 462px;
   border-radius: 15px;
   overflow: hidden;
   overflow: scroll;
@@ -273,7 +273,7 @@ h2 {
 
 .footercontainer {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   height: 150px;
   left: 0;
@@ -377,6 +377,8 @@ h2 {
 @media screen and (max-width: 950px) {
 
   .header {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     width: 100%;
     left: 0;
   }
@@ -424,7 +426,8 @@ h2 {
     top: -0px;
   }
 
-  .img {
+  .img.fils {
+    cursor: pointer;
     width: 80px;
     height: 80px;
   }
@@ -546,16 +549,10 @@ h2 {
     font-weight: 700;
     font-size: 19px;
     width: 266px;
-    height: 400px;
+    height: 320px;
     border-radius: 15px;
     overflow: hidden;
     overflow: scroll;
-
-
-  }
-
-  .footercontainer {
-    width: 100%;
   }
 
 }
