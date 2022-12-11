@@ -30,7 +30,10 @@ nav {
 
 .header {
   width: 100%;
-  height: auto;
+  height: 240px;
+  border: solid whitesmoke 2px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,56 +47,47 @@ nav {
   justify-content: space-between;
 }
 
-.containerpersonne1 {
-  margin-left: 114px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-}
-
-.containerpersonne2 {
-  margin-left: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-}
-
-.containerpersonne3 {
-  background: transparent;
-  margin-right: 114px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+.containerpersonne {
+  width: 230px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #popuprachid {
+  background-color: #fff;
   margin: 6rem auto;
-  padding: 2rem ;
-  background: #fff;
+  padding: 2rem;
   border-radius: 10px;
   width: 48%;
   position: relative;
   left: 0;
-  transition:all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-#popuprachid .cross{
+#popuprachid .cross {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
 }
 
+#popupmostefa {
+  background-color: #fff;
+  margin: 6rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 48%;
+  position: relative;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
 
-.titre.site {
+
+.site, .sitegénéalogie {
   font-size: 25px;
   background: transparent;
   display: flex;
@@ -110,10 +104,9 @@ nav {
   background: brown;
   border-radius: 17px;
 
-
 }
 
-.sitegénéalogie {
+/* .sitegénéalogie {
   font-size: 22px;
   padding-bottom: 20px;
   color: #ffff;
@@ -127,42 +120,44 @@ nav {
   align-content: center;
   justify-content: center;
   align-items: center;
-}
+} */
 
 
-.prénom-rachid, .prénom-mostefa, .prénom-fatma {
+.prénom1 {
+  position: relative;
+  top: 0px;
+  left: 0;
+  height: 76px;
   background: black;
   border: solid rgb(210, 105, 30);
-  font-size: 24px;
+  font-size: 20px;
   color: whitesmoke;
   padding: 4px;
   border-radius: 16px;
-  position: absolute;
-  top: 112px;
-  left: auto;
   text-align: center;
 }
 
-.rachid,.mostefa {
+.rachid,
+.mostefa,
+fatma {
   display: flex;
-    justify-content: center;
-
+  flex-direction: column;
+  align-items: center;
 }
 
-.prénom-fatma {
+
+
+/* .prénom-fatma {
   position: absolute;
   top: 112px;
-  left: 53px;
+  left: 23px;
+} */
 
-}
-
-.prénom-mostefa {
+/* .prénom-mostefa {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  top: 108px;
+  top: 112px;
   left: 43px;
-}
+} */
 
 a {
   text-decoration: none;
@@ -234,32 +229,34 @@ button {
   width: 100px;
 }
 
-.img,
-.père.mère.fils {
-  width: 180px;
-  height: 180px;
+.img {
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  border: solid 5px chocolate;
+  object-fit: fill;
   border-radius: 50%;
   border: solid 5px chocolate;
   object-fit: fill;
 }
 
-.mère {
+/* .mère {
   object-position: 1px 3px;
 
-}
+} */
 
-.père {
+/* .père {
   object-position: 50% 50%;
 
-}
+} */
 
-.fils {
+/* .fils {
   object-position: 4px 10px;
   background-color: white;
   object-fit: contain;
   width: 50px;
 
-}
+} */
 
 h2 {
   color: black;
@@ -298,6 +295,7 @@ h2 {
 .footercontainer {
   position: fixed;
   width: 100%;
+  border: solid 2px whitesmoke;
   bottom: 0;
   height: 150px;
   left: 0;
@@ -401,9 +399,11 @@ h2 {
 @media screen and (max-width: 950px) {
 
   .header {
+    padding: 3px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     width: 100%;
+    height: 150px;
     left: 0;
   }
 
@@ -413,69 +413,48 @@ h2 {
     height: 100vh;
     background: none;
     background-color: rgb(210, 105, 30);
+    display: flex;
+    flex-direction: column;
+    justify-items: center ;
+    justify-content:end;
   }
 
   .navbar-brand {
-
     background-color: orangered;
     width: 85px;
     padding: 15px;
     border-radius: 21px;
   }
 
-  .sitegénéalogie {
-    width: 62px;
+  /* .sitegénéalogie {
+    display:none;
+    background-color: none; */
+    /* width: 62px;
     height: 62px;
     font-size: 0px;
     color: #ffff;
     text-decoration: none;
-    color: #fff;
+    color: #fff; */
+  /* } */
 
+  .site {
+    visibility: hidden;
   }
 
-
-  .containerpersonne1 {
-    margin-left: 0px;
-    width: 119px;
-    left: 8px;
-  }
-
-  .containerpersonne2 {
-    left: 25px;
-  }
-
-  .containerpersonne3 {
-    margin-left: 10px;
-    left: 45px;
-    top: -0px;
-  }
-
-  .img.fils {
+  .img,
+  .Fils {
     cursor: pointer;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
-  span,
-  .prénom {
-    font-size: 15px;
-    top: 68px;
-    left: 30px;
-  }
-
-  .prénom-mostefa {
-    top: 68px;
-    left: 8px;
-  }
-
-  .prénom-fatma {
-    top: 68px;
-    left: 18px;
-  }
-
-  .père {
-    margin-right: 12px;
-    margin-left: -13px;
+  .prénom1
+   {
+    top: 0px;
+    left: 0px;
+    width:100px ;
+    height: 62px;
+    font-size: 18px;
   }
 
   #btnAcceuil {
@@ -496,21 +475,14 @@ h2 {
     margin-left: -46px;
   }
 
-  .titre {
-    margin-top: 1px;
-  }
-
-  img {
-    width: 25px;
-    height: 82px;
-    border-radius: 50%;
-    border: solid 5px chocolate;
-    object-fit: fill;
-  }
 
   body {
     width: auto;
     height: 375vh;
+    display: flex;
+  align-items: center;
+  align-content: center;
+  place-items: center;
 
   }
 
@@ -518,12 +490,13 @@ h2 {
     position: absolute;
     top: 8px;
     left: 139px;
+
   }
 
   .sidebar {
     position: absolute;
     top: 288px;
-    left: 1px;
+    left:0pxx;
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
@@ -577,6 +550,17 @@ h2 {
     border-radius: 15px;
     overflow: hidden;
     overflow: scroll;
+  }
+
+  #popuprachid {
+    background-color:none;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 48%;
+    position: relative;
+    left: 0;
+    transition: all 0.4s ease-in-out;
   }
 
 }
