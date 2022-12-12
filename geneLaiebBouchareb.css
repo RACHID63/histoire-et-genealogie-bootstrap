@@ -86,10 +86,9 @@ nav {
   transition: all 0.4s ease-in-out;
 }
 
-.site.sitegénéalogie {
+.site {
   margin-left: 18px;
 }
-
 .site, .sitegénéalogie {
   font-size: 20px;
   background: transparent;
@@ -108,23 +107,6 @@ nav {
   border-radius: 17px;
 
 }
-
-/* .sitegénéalogie {
-  font-size: 22px;
-  padding-bottom: 20px;
-  color: #ffff;
-  text-decoration: none;
-  margin-bottom: 5px;
-  padding-bottom: 2px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-} */
-
 
 .prénom1 {
   position: relative;

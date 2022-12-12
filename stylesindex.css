@@ -128,6 +128,11 @@ active {
   font-size: 35px;
 }
 
+#paragraphHistoire, strong {
+  font-family: 'Dancing Script', cursive;
+}
+
+
 .titre {
   width: 500px;
     height:800px;
