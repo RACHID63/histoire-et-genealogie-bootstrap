@@ -59,7 +59,7 @@ nav {
 }
 
 #popuprachid {
-  background-color: #fff;
+  background-color:rgb(152, 152, 236);
   margin: 6rem auto;
   padding: 2rem;
   border-radius: 10px;
@@ -69,13 +69,13 @@ nav {
   transition: all 0.4s ease-in-out;
 }
 
-#popuprachid .cross {
+#popuprachid.cross {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
 }
 
-#popupmostefa {
+#popuppère {
   background-color: #fff;
   margin: 6rem auto;
   padding: 2rem;
@@ -86,11 +86,33 @@ nav {
   transition: all 0.4s ease-in-out;
 }
 
+#popupmère {
+  background-color:rosybrown;
+  margin: 6rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 48%;
+  position: relative;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.imglogo {
+  width: 40px;
+  height: 40px;
+}
+
 .site {
   margin-left: 18px;
+ 
 }
-.site, .sitegénéalogie {
-  font-size: 20px;
+a .site, .sitegénéalogie {
+ cursor: pointer;
+  
+  color:#fff ;
+  font-size: 15px;
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -253,13 +275,13 @@ h2 {
   font-family: 'Dancing Script', cursive;
   padding: 55px;
   position: absolute;
-  top: 3%;
-  left: 160%;
-  background: url(./images/parchment-1527104_1920.jpg);
+  top: 7%;
+    left: 147%;
+  /* background: url(./images/parchment-1527104_1920.jpg); */
   background-repeat: no-repeat;
   background-size: 300%;
   background-position: 5%;
-  background-color: rgb(101, 83, 21);
+  background-color:rgb(218 199 131);
   opacity: 0.80;
   border: solid whitesmoke;
   width: 1000px;
@@ -547,5 +569,7 @@ h2 {
     left: 0;
     transition: all 0.4s ease-in-out;
   }
+
+
 
 }
