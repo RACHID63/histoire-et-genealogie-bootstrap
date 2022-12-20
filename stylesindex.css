@@ -12,10 +12,10 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-   justify-content: center; 
-   flex-wrap: nowrap; 
-   align-content: center; 
-  align-items: center; 
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
   background-image: url(./images/compass-2946959_1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +31,7 @@ body {
   text-align: left;
 }
 
-.article{
+.article {
   font-family: "Dancing Script";
   padding: 54px;
   color: black;
@@ -104,10 +104,10 @@ active {
 .boxtitre {
   font-family: "Dancing Script";
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid #32320b;
-    border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  border: solid #32320b;
+  border-radius: 15px;
   position: absolute;
   top: 218px;
   width: 1301px;
@@ -128,14 +128,14 @@ active {
   font-size: 35px;
 }
 
-#paragraphHistoire, strong {
+#paragraphHistoire,
+strong {
   font-family: 'Dancing Script', cursive;
 }
 
-
 .titre {
   width: 500px;
-    height:800px;
+  height: 800px;
   margin-top: -249px;
   color: rgb(52, 40, 28);
   font-family: "Dancing Script", cursive;
@@ -154,24 +154,24 @@ active {
 }
 
 .histoireFrères {
-    position:fixed;
-    top: 0;
-    bottom: 0;
-    left: 25%;
-    right: 0;
-    background: rgba(0,0,0,0.7);
-    transition: opacity .4s;
-    visibility: hidden;
-    opacity:0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity .4s;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.histoireFrères:target{
-  visibility  :visible;
-  opacity:1;
+.histoireFrères:target {
+  visibility: visible;
+  opacity: 1;
 }
 
 #popup {
-  padding: 2rem ;
+  padding: 2rem;
   background-color: #fff;
   background-image: url(.);
   background-repeat: no-repeat;
@@ -180,10 +180,10 @@ active {
   width: 48%;
   position: relative;
   left: 0;
-  transition:all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-#popup .cross{
+#popup .cross {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
@@ -191,7 +191,7 @@ active {
 
 .footercontainer {
   height: 100px;
-  width:100%;
+  width: 100%;
   border: solid 2px white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -267,7 +267,7 @@ active {
   color: #fff;
 }
 
-.wrapper .button  {
+.wrapper .button {
   font-size: 20px;
   font-weight: 500;
   line-height: 60px;
