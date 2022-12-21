@@ -189,6 +189,8 @@ strong {
   right: 1.5rem;
 }
 
+
+
 .footercontainer {
   height: 100px;
   width: 100%;
@@ -301,7 +303,7 @@ strong {
   justify-content: center;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 500px) {
   body {
     width: auto;
     justify-content: center;
