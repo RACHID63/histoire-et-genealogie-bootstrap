@@ -1,418 +1,203 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
+:root {
+  --ink: #172033;
+  --muted: #5b6575;
+  --paper: #fffdf8;
+  --cream: #f6efe2;
+  --gold: #c8953f;
+  --gold-dark: #9b6c22;
+  --green: #1f6b5d;
+  --navy: #152238;
+  --line: rgba(20, 35, 56, .12);
+  --shadow: 0 20px 55px rgba(18, 31, 49, .14);
 }
 
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-  background-image: url(./images/compass-2946959_1920.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ff0000;
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  background: linear-gradient(120deg, rgba(10, 26, 43, .76), rgba(25, 63, 65, .54)), url("./images/compass-2946959_1920.jpg") center / cover fixed;
 }
-
-.histoirelaieb {
-  padding: 35px;
-  font-family: "Dancing Script";
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: left;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 88% 20%, rgba(232, 191, 107, .20), transparent 30%);
 }
-
-.article {
-  font-family: "Dancing Script";
-  padding: 54px;
-  color: black;
-  background-size: 210%;
-  background-position-y: 0px;
-  background-position-x: -102px;
-  background: url(./images/parchment-1527104_1920.jpg);
-  background-repeat: no-repeat;
-}
-
-#tamponcertified {
-  width: 420px;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 320px;
-  right: 15px;
-}
+a { color: inherit; }
 
 .header {
-  height: 225px;
-  width: 1800px;
-  position: absolute;
-  top: 0px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
-  border-radius: 120px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  max-width: none;
+  padding: 1rem clamp(1rem, 4vw, 4rem);
+  background: rgba(255, 253, 248, .93);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
 }
-
-.integrationmenu,
-.navbaraccueil .navbar-brand,
-.nav-link,
-active {
-  width: 250px;
-  font-family: "Dancing Script";
-  font-size: 1.9rem;
+.navbar { padding: 0; max-width: 1280px; margin: auto; }
+.integrationmenu { padding: 0; }
+.navbar-brand, .nav-link {
+  color: var(--navy) !important;
+  font-weight: 600;
+  font-size: .96rem;
+}
+.navbar-brand {
+  margin-left: 0 !important;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.45rem, 2vw, 1.8rem);
+  letter-spacing: .04em;
+}
+.nav-link { padding: .65rem .9rem !important; }
+.nav-link:hover, .nav-link:focus { color: var(--gold-dark) !important; }
+.navbar-toggler { width: auto; border: 1px solid var(--line); box-shadow: none !important; }
+.navbar-nav { align-items: center; }
+.navbar-nav > .me-1, .navbar-nav > .me-5 { margin-right: 0 !important; }
+.boutonnav { display: flex; gap: .45rem; align-items: center; }
+.boutonnav .nav-item { margin: 0 !important; }
+.boutonnav a {
+  display: inline-block;
+  padding: .55rem .85rem;
+  border-radius: 999px;
+  font-size: .86rem;
   font-weight: 700;
-}
-
-.navbar {
-  position: absolute;
-  top: 10px;
-  padding: 19px;
-  background-color: rgb(238, 239, 220);
-  border-radius: 120px;
-  opacity: 0.8;
-  width: 1322px;
-  box-shadow: rgba(0, 0, 0, 0.6) -45px 100px 20px;
-}
-
-.search {
-  font-family: "Dancing Script";
-  padding-left: -2px;
-  margin-left: 0px;
-  width: 221px;
-  border-radius: 10px;
-  border: solid green;
-  font-weight: 700;
-}
-
-.boutonnav {
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.25;
   cursor: pointer;
 }
+.boutonnav .btn-light { background: #edf2ee; color: var(--green); }
+.boutonnav .btn-danger { background: var(--navy); border-color: var(--navy); }
+.boutonnav .btn-success { background: var(--green); border-color: var(--green); }
+.search { gap: .45rem; margin-left: .75rem; }
+.search .form-control { min-width: 135px; border-radius: 999px; border-color: var(--line); font-size: .88rem; }
+.btnsearch { border: 0; border-radius: 999px; background: var(--gold); color: #fff; font-weight: 700; font-size: .82rem; }
 
 .boxtitre {
-  font-family: "Dancing Script";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: solid #32320b;
-  border-radius: 15px;
-  position: absolute;
-  top: 218px;
-  width: 1301px;
-  height: 580px;
-  padding: 55px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.7) -45px 100px 20px;
-  background-color: antiquewhite;
-  background-repeat: no-repeat;
-  background-size: 300%;
-  background-position: 5%;
-  background-color: rgb(101, 83, 21);
-  opacity: 0.75;
-  border: solid whitesmoke;
-  overflow: hidden;
-  overflow: scroll;
-  font-weight: 700;
-  font-size: 35px;
+  width: min(1120px, calc(100% - 2rem));
+  min-height: auto;
+  height: auto;
+  margin: clamp(2rem, 6vw, 5rem) auto 3rem;
+  padding: clamp(1.5rem, 5vw, 4.5rem);
+  display: block;
+  position: relative;
+  overflow: visible;
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 28px;
+  background: rgba(255, 253, 248, .96);
+  box-shadow: var(--shadow);
+  opacity: 1;
 }
-
-#paragraphHistoire,
-strong {
-  font-family: 'Dancing Script', cursive;
-}
-
 .titre {
-  width: 500px;
-  height: 800px;
-  margin-top: -249px;
-  color: rgb(52, 40, 28);
-  font-family: "Dancing Script", cursive;
-  font-size: 155px;
-  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 0 0 2.5rem;
+  color: var(--navy);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  line-height: .82;
+  letter-spacing: -.04em;
 }
-
+.titre::after {
+  content: "Mémoire · Origines · Transmission";
+  display: block;
+  margin-top: 1.25rem;
+  color: var(--gold-dark);
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(.7rem, 1.4vw, .9rem);
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.boxtitre hr { border-color: var(--line); opacity: 1; margin: 2rem 0; }
+.histoirelaieb1 { max-width: 860px; margin: auto; }
 #titrehistoire {
-  text-align: center;
-  font-size: larger;
-  text-decoration-line: underline;
+  margin-bottom: 1.25rem;
+  color: var(--green);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
 }
-
-#famillefrères {
-  cursor: pointer;
+.article {
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 18px 18px 0;
+  background: linear-gradient(135deg, #fbf4e7, #fffdf8);
+  color: #293547;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1rem, 1.6vw, 1.12rem);
+  font-weight: 400;
+  line-height: 1.9;
+}
+.article strong, #paragraphHistoire, strong { font-family: inherit; }
+.histoirelaieb1 > a { display: inline-block; margin-top: 1rem; color: var(--green); font-weight: 700; }
+#tamponcertified {
+  display: block;
+  width: clamp(120px, 16vw, 210px);
+  margin: -6.5rem max(1rem, calc((100% - 1120px) / 2)) 3rem auto;
+  transform: rotate(12deg);
+  opacity: .82;
+  filter: drop-shadow(0 12px 10px rgba(0,0,0,.14));
 }
 
 .histoireFrères {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 25%;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity .4s;
+  z-index: 50;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(9, 21, 35, .72);
   visibility: hidden;
   opacity: 0;
+  transition: opacity .25s ease, visibility .25s ease;
 }
-
-.histoireFrères:target {
-  visibility: visible;
-  opacity: 1;
-}
-
+.histoireFrères:target { visibility: visible; opacity: 1; }
 #popup {
-  padding: 2.3rem;
-  background-color: #fff;
-  background-image: url(.);
-  background-repeat: no-repeat;
-  margin: 6rem auto;
-  border-radius: 10px;
-  width: 48%;
+  width: min(680px, 100%);
+  margin: 0;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border-radius: 22px;
   position: relative;
-  left: 0;
-  transition: all 0.4s ease-in-out;
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  line-height: 1.75;
 }
+#popup .cross { position: absolute; top: .65rem; right: 1rem; color: var(--navy); font-size: 2rem; text-decoration: none; }
 
-#popup .cross {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
+.footercontainer { position: static; height: auto; padding: 1.2rem; border: 0; border-radius: 0; background: rgba(15, 31, 49, .96); }
+.wrapper { display: flex; justify-content: center; flex-wrap: wrap; gap: .55rem; }
+.wrapper .button { display: flex; align-items: center; width: auto; height: 42px; margin: 0; overflow: hidden; border-radius: 999px; background: rgba(255,255,255,.1); box-shadow: none; }
+.wrapper .button:hover { width: auto; }
+.wrapper .button .icon { width: 42px; height: 42px; line-height: 42px; color: #fff; }
+.wrapper .button .icon i { font-size: 1rem; line-height: 42px; }
+.wrapper .button a { padding: 0 .85rem .05rem 0; color: #fff; text-decoration: none; font-size: .82rem; font-weight: 600; }
+.wrapper .button span { color: #fff !important; }
+
+.modal-content { border: 0 !important; border-radius: 20px !important; overflow: hidden; }
+.modal-header { background: var(--green) !important; color: #fff; }
+.modal-title { font-family: "Cormorant Garamond", serif; }
+
+@media (max-width: 1199px) {
+  .navbar-collapse { padding-top: 1rem; }
+  .navbar-nav { align-items: flex-start; }
+  .boutonnav { margin: .5rem 0; flex-wrap: wrap; }
+  .search { margin: .5rem 0 0; max-width: 330px; }
 }
-
-
-
-.footercontainer {
-  height: 100px;
-  width: 100%;
-  border: solid 2px white;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background: #002334;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-
-.wrapper .button {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 0 5px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:hover {
-  width: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.wrapper .button .icon {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:nth-child(1):hover .icon {
-  background: #4267b2;
-}
-
-.wrapper .button:nth-child(2):hover .icon {
-  background: #1da1f2;
-}
-
-.wrapper .button:nth-child(3):hover .icon {
-  background: #e1306c;
-}
-
-.wrapper .button:nth-child(4):hover .icon {
-  background: #333;
-}
-
-.wrapper .button:nth-child(5):hover .icon {
-  background: #ff0000;
-}
-
-.wrapper .button .icon i {
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:hover .icon i {
-  color: #fff;
-}
-
-.wrapper .button {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-left: 10px;
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:nth-child(1) span {
-  color: #4267b2;
-}
-
-.wrapper .button:nth-child(2) span {
-  color: #1da1f2;
-}
-
-.wrapper .button:nth-child(3) span {
-  color: #e1306c;
-}
-
-.wrapper .button:nth-child(4) span {
-  color: #333;
-}
-
-.wrapper .button:nth-child(5) span {
-  color: #ff0000;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    width: auto;
-    justify-content: center;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #bf9a69;
-  }
-
-  .header {
-    top: -47px;
-  }
-
-  .search {
-    position: absolute;
-    top: 333px;
-    left: 96px;
-  }
-
-  #tamponcertified {
-    width: 150px;
-    position: absolute;
-    top: 600px;
-    right: 300px;
-    opacity: 0.68;
-  }
-
-  .boutonnav,
-  .btn-info {
-    width: auto;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navbaraccueil {
-    position: absolute;
-    top: 190px;
-    left: 120px;
-  }
-
-  .navbab {
-    position: absolute;
-    top: 180px;
-    box-shadow: rgba(0, 0, 0, 0.6) -45px 100px 20px;
-  }
-
-  .navbar.nav-link {
-    background-color: aquamarine;
-    height: 74px;
-    width: 123px;
-    font-size: 17px;
-    text-align: center;
-    border-radius: 15px;
-    margin-bottom: 3px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-  }
-
-  .hlaieb {
-    position: absolute;
-    top: 80px;
-    left: 160px;
-  }
-
-  .genelaieb {
-    position: absolute;
-    top: 50px;
-    left: 10px;
-  }
-
-  .boxtitre {
-    font-family: "Dancing Script", cursive;
-    position: absolute;
-    top: 350px;
-    width: 400px;
-    height: 308px;
-    left: 6px;
-    padding: 18px;
-    font-size: 18px;
-  }
-
-  .titre {
-    margin-bottom: 122px;
-    text-align: center;
-    display: flex;
-    text-align: center;
-    font-size: 40px;
-  }
-
-  #histoirelaieb1 {
-    margin-top: 0;
-    margin-bottom: -3px;
-    padding: -24px;
-    width: 446px;
-    left: -43px;
-    position: absolute;
-    font-size: 19px;
-    color: black;
-    background-size: 210%;
-    background-position-y: 0px;
-    background-position-x: -102px;
-    background-image: none;
-  }
+@media (max-width: 575px) {
+  .header { padding: .75rem 1rem; }
+  .boxtitre { width: calc(100% - 1.25rem); margin-top: 1.5rem; border-radius: 20px; }
+  .titre { font-size: clamp(3.2rem, 17vw, 4.5rem); }
+  .article { border-left-width: 3px; line-height: 1.75; }
+  #tamponcertified { margin-top: -2rem; margin-right: 1.2rem; }
+  .search { width: 100%; }
+  .search .form-control { min-width: 0; }
 }

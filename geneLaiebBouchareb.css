@@ -1,531 +1,98 @@
-import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  margin: 0;
-}
-
+:root { --navy:#152238; --green:#1f6b5d; --gold:#c8953f; --paper:#fffdf8; --line:rgba(20,35,56,.12); --shadow:0 20px 55px rgba(8,22,39,.18); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
+  min-height: 100vh;
   margin: 0;
+  padding: 1.5rem;
+  color: var(--navy);
+  font-family: "DM Sans", sans-serif;
+  background: linear-gradient(135deg, rgba(9,25,43,.78), rgba(31,107,93,.44)), url("./images/870x489_30_05_22_adn_kateryna_kon_science_photo_library_gettyimages-1339204507.jpg") center / cover fixed;
 }
-
-body,
-.image-fluid {
-  max-width: 100vmax;
-  height: 100vh;
-  background-image: url(./images/870x489_30_05_22_adn_kateryna_kon_science_photo_library_gettyimages-1339204507.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0px 0px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  place-items: center;
-}
-
-nav {
-  width: auto;
-}
-
+a { text-decoration: none; }
+nav.container { position: static !important; width: 100%; max-width: 1250px; margin: 0 auto !important; padding: 0 !important; }
 .header {
   width: 100%;
-  height: 240px;
-  border: solid whitesmoke 2px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 0px;
-  background: #504702c8;
-  opacity: 2;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.containerpersonne {
-  width: 230px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  display: flex !important;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#popuprachid {
-  background-color:rgb(152, 152, 236);
-  margin: 6rem auto;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 48%;
-  position: relative;
-  left: 0;
-  transition: all 0.4s ease-in-out;
-}
-
-#popuprachid.cross {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-}
-
-#popuppère {
-  background-color: #fff;
-  margin: 6rem auto;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 48%;
-  position: relative;
-  left: 0;
-  transition: all 0.4s ease-in-out;
-}
-
-#popupmère {
-  background-color:rgb(255, 164, 197);
-  margin: 6rem auto;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 48%;
-  position: relative;
-  left: 0;
-  transition: all 0.4s ease-in-out;
-}
-
-
-
-.imglogo {
-  width: 40px;
-  height: 40px;
-}
-
-.site {
-  margin-left: 18px;
- 
-}
-a .site, .sitegénéalogie {
- cursor: pointer;
-  
-  color:#fff ;
-  font-size: 15px;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  border: solid 2px;
-  border-radius: 27px;
-  padding: 8px;
-  background: rgb(191, 141, 112);
-  padding: 9px;
-  border: solid 1px wheat;
-  background: brown;
-  border-radius: 17px;
-
-}
-
-.prénom1 {
-  position: relative;
-  top: 0px;
-  left: 0;
-  height: 76px;
-  background: black;
-  border: solid rgb(210, 105, 30);
-  font-size: 20px;
-  color: whitesmoke;
-  padding: 4px;
-  border-radius: 16px;
-  text-align: center;
-}
-
-.rachid,
-.mostefa,
-fatma {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-a {
-  text-decoration: none;
-}
-
-a.btn1 {
-  margin: 15px;
-  width: fit-content;
-}
-
-.btn-group-lg>.btn,
-.btn-lg {
-  margin-bottom: 20px;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
-  border-radius: 8rem;
-}
-
-button {
-  width: 80%;
-  height: 100px;
-}
-
-.btn {
-  width: 100%;
-}
-
-.btn-light:hover {
-  color: black;
-  background-color: yellow;
-  border-color: red;
-  -webkit-box-shadow: 0px 1px 28px 15px rgba(243, 235, 235, 0.963);
-  box-shadow: 0px 1px 28px 15px rgba(243, 235, 235, 0.963);
-}
-
-.sidebar {
-  position: absolute;
-  left: 0;
-  margin-top: 100px;
-  margin-bottom: 2px;
+  min-height: 184px;
+  margin: 0 !important;
+  padding: 1.25rem clamp(1rem, 4vw, 3rem);
+  position: static !important;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  opacity: 2;
-  width: 340px;
-  height: 500px;
+  gap: clamp(1rem, 5vw, 4rem);
+  background: rgba(255,253,248,.94);
+  border: 1px solid rgba(255,255,255,.65);
+  border-radius: 26px 26px 0 0;
+  box-shadow: var(--shadow);
 }
+.site { margin: 0; flex: 0 0 auto; }
+.sitegénéalogie { display:flex; align-items:center; gap:.65rem; color:var(--green); font-family:"Cormorant Garamond",serif; font-size:1.3rem; font-weight:700; }
+.imglogo { width:44px; height:44px; }
+.header > nav { position: static !important; width: auto; margin: 0 !important; }
+.header > nav > .container { display:flex !important; flex-wrap:wrap; justify-content:center !important; gap:1rem; padding:0 !important; }
+.containerpersonne { width:auto; margin:0; padding:0; display:flex !important; justify-content:center; }
+.rachid { display:flex; align-items:center; gap:.75rem; color:var(--navy); }
+.img { width:98px; height:98px; border:4px solid var(--gold); border-radius:50%; object-fit:cover; box-shadow:0 7px 16px rgba(18,31,49,.2); transition:transform .2s ease; }
+.rachid:hover .img { transform:translateY(-4px); }
+.prénom1 { display:block; min-width:88px; height:auto; padding:.55rem .7rem; border:1px solid var(--line); border-radius:12px; color:var(--navy); background:#fff; font-size:.88rem; line-height:1.2; text-align:center; }
 
-#imghome {
-  margin-bottom: 15px;
-  width: 80px;
-  cursor: pointer;
-  position: absolute;
-  top: -54px;
-  ;
-  left: 120px;
-}
-
-#imghome,
-.logohome :hover {
-  width: 100px;
-}
-
-.img {
-  width: 141px;
-  height: 141px;
-  border-radius: 50%;
-  border: solid 5px chocolate;
-  object-fit: fill;
-  border-radius: 50%;
-  border: solid 5px chocolate;
-  object-fit: fill;
-}
-
-
-
-h2 {
-  color: black;
-  text-align: center;
-  font-size: 2.5rem;
-}
+.sidebar { position:static; width:min(1250px,100%); height:auto; margin:0 auto; padding:1rem clamp(1rem,4vw,3rem); display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:center; gap:.7rem; background:rgba(21,34,56,.94); }
+.logohome { display:flex; align-items:center; }
+#imghome { position:static; width:32px; margin:0 .3rem 0 0; transition:transform .2s ease; }
+#imghome:hover { width:32px; transform:scale(1.1); }
+.btn1, #btnMaternel, #btnPaternel { display:contents; }
+.sidebar .btn { width:auto; height:auto; margin:0; padding:.6rem 1rem; border:1px solid rgba(255,255,255,.22); border-radius:999px; background:transparent; color:#fff; font-size:.87rem; }
+.sidebar .btn a { color:inherit; }
+.sidebar .btn:hover { color:var(--navy); background:#fff; border-color:#fff; box-shadow:none; }
 
 #boxtext {
-  font-family: 'Dancing Script', cursive;
-  padding: 55px;
-  position: absolute;
-  top: 7%;
-    left: 147%;
-  background-repeat: no-repeat;
-  background-size: 300%;
-  background-position: 5%;
-  background-color:rgb(218 199 131);
-  opacity: 0.80;
-  border: solid whitesmoke;
-  width: 1000px;
-  height: 462px;
-  border-radius: 15px;
-  overflow: hidden;
-  overflow: scroll;
-  font-weight: 700;
-  font-size: 35px;
-  box-shadow: 0px 1px 38px 25px #f3edf8;
+  width:min(1250px,100%);
+  height:auto;
+  max-height:none;
+  margin:0 auto 2rem;
+  padding:clamp(1.5rem,5vw,4rem);
+  position:static;
+  overflow:visible;
+  border:0;
+  border-radius:0 0 26px 26px;
+  background:rgba(255,253,248,.96);
+  box-shadow:var(--shadow);
+  font-family:"DM Sans",sans-serif;
+  font-size:1rem;
+  font-weight:400;
+  line-height:1.8;
+  opacity:1;
 }
+#boxtext h2 { color:var(--green); font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3rem); text-align:left; }
+#boxtext h3 { color:var(--gold); font-size:1rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; }
+.paragraphe2 { margin:0 0 2.5rem; }
+#boxtext hr { margin:3rem 0; border-color:var(--line); opacity:1; }
 
-.boxtext :hover {
-  border: solid black;
+.bodyIdentity { position:fixed; z-index:10; inset:0; display:none; place-items:center; padding:1rem; background:rgba(9,21,35,.7); }
+.bodyIdentity:target { display:grid; }
+#popuprachid, #popuppère, #popupmère { width:min(520px,100%); margin:0; padding:2rem; position:relative; border-radius:20px; background:var(--paper); box-shadow:var(--shadow); }
+.bodyIdentity .cross { position:absolute; top:.6rem; right:1rem; color:var(--navy); font-size:2rem; }
 
-}
+.footercontainer { width:min(1250px,100%); margin:0 auto; padding:1.25rem; position:static; height:auto; border:0; border-radius:22px; background:rgba(21,34,56,.96); }
+.wrapper { display:flex; flex-wrap:wrap; justify-content:center; gap:.55rem; }
+.wrapper .button { display:flex; align-items:center; width:auto; height:42px; margin:0; overflow:hidden; border-radius:999px; background:rgba(255,255,255,.1); box-shadow:none; color:#fff; font-size:.82rem; line-height:1; }
+.wrapper .button:hover { width:auto; }
+.wrapper .button .icon { width:42px; height:42px; line-height:42px; text-align:center; }
+.wrapper .button .icon i { font-size:1rem; line-height:42px; }
+.wrapper .button a { color:#fff; padding-right:.8rem; }
 
-.footercontainer {
-  position: fixed;
-  width: 100%;
-  border: solid 2px whitesmoke;
-  bottom: 0;
-  height: 150px;
-  left: 0;
-  margin-left: 0px;
-  display: flex;
-  flex: row;
-  justify-content: center;
-  align-items: center;
-  background: #504702c8;
-  opacity: 2;
-}
-
-.wrapper .button {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 0 5px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:hover {
-  width: 200px;
-}
-
-.wrapper .button .icon {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:nth-child(1):hover .icon {
-  background: #4267b2;
-}
-
-.wrapper .button:nth-child(2):hover .icon {
-  background: #1da1f2;
-}
-
-.wrapper .button:nth-child(3):hover .icon {
-  background: #e1306c;
-}
-
-.wrapper .button:nth-child(4):hover .icon {
-  background: #333;
-}
-
-.wrapper .button:nth-child(5):hover .icon {
-  background: #ff0000;
-}
-
-.wrapper .button .icon i {
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:hover .icon i {
-  color: #fff;
-}
-
-.wrapper .button {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-left: 10px;
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:nth-child(1) span {
-  color: #4267b2;
-}
-
-.wrapper .button:nth-child(2) span {
-  color: #1da1f2;
-}
-
-.wrapper .button:nth-child(3) span {
-  color: #e1306c;
-}
-
-.wrapper .button:nth-child(4) span {
-  color: #333;
-}
-
-.wrapper .button:nth-child(5) span {
-  color: #ff0000;
-}
-
-@media screen and (max-width: 950px) {
-
-  .header {
-    padding: 3px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    width: 100%;
-    height: 150px;
-    left: 0;
-  }
-
-  body {
-    margin: 0px;
-    width: 100%;
-    height: 100vh;
-    background: none;
-    background-color: rgb(210, 105, 30);
-    display: flex;
-    flex-direction: column;
-    justify-items: center ;
-    justify-content:end;
-  }
-
-  .navbar-brand {
-    background-color: orangered;
-    width: 85px;
-    padding: 15px;
-    border-radius: 21px;
-  }
-
-  .site {
-    visibility: hidden;
-  }
-
-  .img,
-  .Fils {
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-  }
-
-  .prénom1
-   {
-    top: 0px;
-    left: 0px;
-    width:100px ;
-    height: 62px;
-    font-size: 18px;
-  }
-
-  #btnAcceuil {
-    width: 87px;
-    position: absolute;
-    left: -37px;
-  }
-
-  #btnPaternel {
-    position: absolute;
-    left: 128px;
-    margin-left: -15px;
-  }
-
-  #btnMaternel {
-    position: absolute;
-    left: 329px;
-    margin-left: -46px;
-  }
-
-  body {
-    width: auto;
-    height: 375vh;
-    display: flex;
-  align-items: center;
-  align-content: center;
-  place-items: center;
-
-  }
-
-  .logohome {
-    position: absolute;
-    top: 8px;
-    left: 139px;
-
-  }
-
-  .sidebar {
-    position: absolute;
-    top: 288px;
-    left:0pxx;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    opacity: 2;
-    height: 102PX;
-    WIDTH: 601PX;
-  }
-
-  .btn1 {
-    DISPLAY: FLEX;
-    FLEX-DIRECTION: row;
-    position: absolute;
-    left: 150px;
-  }
-
-  .btn {
-    margin-bottom: 20px;
-    scroll-margin-right: 30px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    border-radius: 8rem;
-    margin-bottom: 20px;
-  }
-
-  #boxtext {
-    font-family: 'Dancing Script', cursive;
-    padding: 27px;
-    position: absolute;
-    top: 199px;
-    left: 0%;
-    background: url(./images/parchment-1527104_1920.jpg);
-    background-repeat: no-repeat;
-    background-size: 300%;
-    background-position: 5%;
-    background-color: rgb(101, 83, 21);
-    opacity: 0.80;
-    border: solid whitesmoke;
-    font-weight: 700;
-    font-size: 19px;
-    width: 266px;
-    height: 320px;
-    border-radius: 15px;
-    overflow: hidden;
-    overflow: scroll;
-  }
-
-  #popuprachid {
-    background-color:none;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 48%;
-    position: relative;
-    left: 0;
-    transition: all 0.4s ease-in-out;
-  }
-
-
-
+@media (max-width: 720px) {
+  body { padding:.75rem; }
+  .header { min-height:auto; align-items:flex-start; justify-content:flex-start; flex-wrap:wrap; border-radius:20px 20px 0 0; }
+  .site { width:100%; }
+  .header > nav, .header > nav > .container { width:100%; }
+  .header > nav > .container { justify-content:flex-start !important; }
+  .containerpersonne { width:100%; justify-content:flex-start; }
+  .img { width:75px; height:75px; }
+  #boxtext { padding:1.5rem; border-radius:0 0 20px 20px; }
+  #boxtext h2 { text-align:left; }
+  .sidebar { justify-content:flex-start; }
 }
